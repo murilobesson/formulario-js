@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style type="text/css">
+        div{
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            max-width: 300px;
+            background-color: goldenrod;
+            border-radius: 6px;
+        }
+
+        button{
+            border-radius: 6px;
+        }
+
+        input{
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" maxlength="100" required pattern="[A-Za-zÀ-ú\s]+">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" required pattern="\([1-9]{2}\) [0-9]{4,5}-[0-9]{4}">
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
